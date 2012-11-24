@@ -2,7 +2,7 @@ package com.example.my.first.app;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.app.NavUtils;
+//import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
@@ -19,7 +19,7 @@ public class PictureScroll extends Activity {
 		// Show the Up button in the action bar.
 		//getActionBar().setDisplayHomeAsUpEnabled(true);
 	}
-
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
@@ -29,6 +29,7 @@ public class PictureScroll extends Activity {
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
+		/*
 		switch (item.getItemId()) {
 		case android.R.id.home:
 			// This ID represents the Home or Up button. In the case of this
@@ -41,6 +42,7 @@ public class PictureScroll extends Activity {
 			NavUtils.navigateUpFromSameTask(this);
 			return true;
 		}
+		*/
 		return super.onOptionsItemSelected(item);
 	}
 
