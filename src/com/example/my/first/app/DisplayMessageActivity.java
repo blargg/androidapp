@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
-import android.support.v4.app.NavUtils;
+//import android.support.v4.app.NavUtils;
 
 public class DisplayMessageActivity extends Activity {
 
@@ -38,11 +38,11 @@ public class DisplayMessageActivity extends Activity {
     
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
+        /*switch (item.getItemId()) {
             case android.R.id.home:
                 NavUtils.navigateUpFromSameTask(this);
                 return true;
-        }
+        }*/
         return super.onOptionsItemSelected(item);
     }
     

@@ -9,6 +9,39 @@ package com.example.my.first.app;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int exampleColor=0x7f010002;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int exampleDimension=0x7f010001;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int exampleDrawable=0x7f010003;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int exampleString=0x7f010000;
     }
     public static final class drawable {
         public static final int ic_action_search=0x7f020000;
@@ -16,26 +49,110 @@ public final class R {
     }
     public static final class id {
         public static final int edit_message=0x7f070000;
-        public static final int menu_settings=0x7f070001;
+        public static final int graphics_holder=0x7f070001;
+        public static final int menu_settings=0x7f070002;
     }
     public static final class layout {
         public static final int activity_display_message=0x7f030000;
         public static final int activity_main=0x7f030001;
+        public static final int activity_picture_scroll=0x7f030002;
+        public static final int sample_play_area_view=0x7f030003;
     }
     public static final class menu {
         public static final int activity_display_message=0x7f060000;
         public static final int activity_main=0x7f060001;
+        public static final int activity_picture_scroll=0x7f060002;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
         public static final int button_send=0x7f040002;
+        public static final int drag_text=0x7f040008;
         public static final int edit_message=0x7f040001;
         public static final int hello_world=0x7f040005;
         public static final int menu_settings=0x7f040003;
         public static final int title_activity_display_message=0x7f040006;
         public static final int title_activity_main=0x7f040004;
+        public static final int title_activity_picture_scroll=0x7f040007;
     }
     public static final class style {
         public static final int AppTheme=0x7f050000;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a PlayAreaView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #PlayAreaView_exampleColor com.example.my.first.app:exampleColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PlayAreaView_exampleDimension com.example.my.first.app:exampleDimension}</code></td><td></td></tr>
+           <tr><td><code>{@link #PlayAreaView_exampleDrawable com.example.my.first.app:exampleDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #PlayAreaView_exampleString com.example.my.first.app:exampleString}</code></td><td></td></tr>
+           </table>
+           @see #PlayAreaView_exampleColor
+           @see #PlayAreaView_exampleDimension
+           @see #PlayAreaView_exampleDrawable
+           @see #PlayAreaView_exampleString
+         */
+        public static final int[] PlayAreaView = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.example.my.first.app.R.attr#exampleColor}
+          attribute's value can be found in the {@link #PlayAreaView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:exampleColor
+        */
+        public static final int PlayAreaView_exampleColor = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.example.my.first.app.R.attr#exampleDimension}
+          attribute's value can be found in the {@link #PlayAreaView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:exampleDimension
+        */
+        public static final int PlayAreaView_exampleDimension = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.example.my.first.app.R.attr#exampleDrawable}
+          attribute's value can be found in the {@link #PlayAreaView} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          @attr name android:exampleDrawable
+        */
+        public static final int PlayAreaView_exampleDrawable = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.example.my.first.app.R.attr#exampleString}
+          attribute's value can be found in the {@link #PlayAreaView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:exampleString
+        */
+        public static final int PlayAreaView_exampleString = 0;
+    };
 }

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="app_name">My First App</string>
@@ -7,5 +8,7 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_display_message">My Message</string>
+    <string name="title_activity_picture_scroll">Move Image</string>
+    <string name="drag_text">Drag the android around</string>
 
 </resources>

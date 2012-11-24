@@ -26,7 +26,8 @@ public class MainActivity extends Activity {
     /** Called when someone clicks the button */
     public void sendMessage(View view){
     	// do something here
-    	Intent intent = new Intent(this, DisplayMessageActivity.class);
+    	//Intent intent = new Intent(this, DisplayMessageActivity.class);
+    	Intent intent = new Intent(this, PictureScroll.class);
     	EditText editText = (EditText) findViewById(R.id.edit_message);
     	String message = editText.getText().toString();
     	intent.putExtra(EXTRA_MESSAGE, message);
