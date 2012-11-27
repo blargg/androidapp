@@ -37,6 +37,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.my.first.app.MainActivity" />
         </activity>
+        <activity
+            android:name="com.example.my.first.app.LinearPictures"
+            android:label="@string/title_activity_linear_pictures" >
+        </activity>
     </application>
 
 </manifest>

@@ -10,5 +10,6 @@
     <string name="title_activity_display_message">My Message</string>
     <string name="title_activity_picture_scroll">Move Image</string>
     <string name="drag_text">Drag the android around</string>
+    <string name="title_activity_linear_pictures">LinearPictures</string>
 
 </resources>
